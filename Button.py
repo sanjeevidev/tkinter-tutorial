@@ -45,3 +45,33 @@ button = tk.Button(root, image=photo, command=on_button_click)
 button.pack()
 
 root.mainloop()
+
+#Example-4 - Button with Tooltip with Hover effects
+import tkinter as tk
+from tkinter import ttk
+
+def on_button_click():
+    print("Button clicked!")
+
+def show_tooltip(event):
+    tooltip = ttk.Label(root, text="This is a tooltip!")
+    tooltip.place(x=event.x_root, y=event.y_root, anchor=tk.CENTER)
+
+def hide_tooltip(event):
+    for widget in root.winfo_children():
+        if isinstance(widget, ttk.Label):
+            widget.destroy()
+
+root = tk.Tk()
+root.title("Button with Tooltip Example")
+
+style = ttk.Style()
+style.map("TButton", foreground=[('active', 'blue')])
+
+button = ttk.Button(root, text="Hover Me!", command=on_button_click)
+button.pack()
+
+button.bind("<Enter>", show_tooltip)
+button.bind("<Leave>", hide_tooltip)
+
+root.mainloop()
