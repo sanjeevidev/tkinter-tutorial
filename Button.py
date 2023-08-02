@@ -26,3 +26,22 @@ button = tk.Button(root, text="Click Me!", command=on_button_click, bg="black", 
 button.pack()
 
 root.mainloop()
+
+#Example-3 - Button with Image
+import tkinter as tk
+from PIL import Image, ImageTk
+
+def on_button_click():
+    print("Button clicked!")
+
+root = tk.Tk()
+root.title("Button with Image Example")
+
+# Load the image
+image = Image.open("path/to/image.png")
+photo = ImageTk.PhotoImage(image)
+
+button = tk.Button(root, image=photo, command=on_button_click)
+button.pack()
+
+root.mainloop()
