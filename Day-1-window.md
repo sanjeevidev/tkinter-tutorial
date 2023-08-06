@@ -1,4 +1,4 @@
-## Creating Window UI
+## Creating a Window UI
 ```python
 from tkinter import *
 from tkinter.ttk import *
