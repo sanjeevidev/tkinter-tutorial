@@ -1,3 +1,5 @@
+## Creating Window UI
+```python
 from tkinter import *
 from tkinter.ttk import *
 
@@ -10,3 +12,4 @@ root.title("First_Program")
 # Label is what output will be
 label = Label(root, text ="Hello World !").pack()
 root.mainloop()
+```
