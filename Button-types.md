@@ -1,4 +1,5 @@
-#Example-1 - Start and Stop Buttons
+## Example-1 - Start and Stop Buttons
+```python
 import tkinter as tk
 from tkinter import messagebox
 
@@ -13,8 +14,9 @@ button.pack()
 button1.pack()
 
 r.mainloop()
-
-#Example-2 - Button with Different Colors
+```
+## Example-2 - Button with Different Colors
+```python
 import tkinter as tk
 
 def on_button_click():
@@ -26,8 +28,9 @@ button = tk.Button(root, text="Click Me!", command=on_button_click, bg="black", 
 button.pack()
 
 root.mainloop()
-
-#Example-3 - Button with Image
+```
+## Example-3 - Button with Image
+```python
 import tkinter as tk
 from PIL import Image, ImageTk
 
@@ -45,8 +48,9 @@ button = tk.Button(root, image=photo, command=on_button_click)
 button.pack()
 
 root.mainloop()
-
-#Example-4 - Button with Tooltip with Hover effects
+```
+## Example-4 - Button with Tooltip with Hover effects
+```python
 import tkinter as tk
 from tkinter import ttk
 
@@ -75,3 +79,4 @@ button.bind("<Enter>", show_tooltip)
 button.bind("<Leave>", hide_tooltip)
 
 root.mainloop()
+```
