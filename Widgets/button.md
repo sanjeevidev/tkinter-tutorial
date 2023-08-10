@@ -1,4 +1,4 @@
-## Creating a Button with ttk module 
+### Creating a Button with ttk module 
 ## Example 
 ```python
 from tkinter import *
